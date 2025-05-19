@@ -1,15 +1,13 @@
 package src.client;
 
+import src.client.utils.CommandReader;
 import src.client.utils.InputReader;
 import src.shared.model.Response;
 
 import java.util.List;
 import java.util.Scanner;
 
-
-import src.client.utils.CommandReader;
-
-import static sun.security.util.Debug.Help;
+//import static sun.security.util.Debug.Help;
 
 public class Client {
     private final CommandSender commandSender;
@@ -37,7 +35,7 @@ public class Client {
                 }
 
                 if ("help".equals(command)) {
-                    Help();
+//                    Help();
                     continue;
                 }
 

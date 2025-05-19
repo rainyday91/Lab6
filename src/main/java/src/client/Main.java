@@ -191,7 +191,7 @@ public class Main {
             // Отправляем на сервер
             byte[] data = serialize(commandFactory);
             socketChannel.write(ByteBuffer.wrap(data));
-            System.out.println("Команда отправлена: " + commandFactory.getArgument());
+            System.out.println("Команда отправлена: " + commandFactory.getCommandName());
 
             // Получаем ответ
             ByteBuffer buffer = ByteBuffer.allocate(8192);
